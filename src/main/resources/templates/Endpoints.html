@@ -1,0 +1,36 @@
+POST - http://localhost:8080/restaurantes
+{
+"nome": "Restaurante do João",
+"itens": [
+{
+"nome": "Pizza",
+"preco": 30.00
+},
+{
+"nome": "Lasanha",
+"preco": 25.50
+}
+]
+}
+
+
+GET - http://localhost:8080/restaurantes/1/cardapio
+
+
+POST - http://localhost:8080/pedidos
+
+{
+"restauranteId": 1,
+"itemMenuIds": [1, 2],
+"nomeCliente": "Maria"
+}
+
+
+DELETE http://localhost:8080/pedidos/1
+
+
+http://localhost:8080/h2-console
+
+SELECT * FROM PEDIDO;
+SELECT * FROM RESTAURANTE;
+SELECT * FROM ITEM_MENU;
